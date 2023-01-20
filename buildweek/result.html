@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./result.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/epicode_logo.png" alt="Logo" />
+    </header>
+    <main>
+      <h1>Results</h1>
+      <h2>The summary of your answer:</h2>
+
+      <section>
+        <div class="correct" id="correct">
+          <h2 class="correct">Correct</h2>
+          <h3 class="correct" id="correctPerc">percentuale</h3>
+          <p class="correct" id="correctNum">n/10</p>
+        </div>
+        <div class="result" id="circle">
+          <h4 id="textResult">Congratulations!</h4>
+          <h4 id="textResult2">You passed the exam.</h4>
+          <p id="pResult">We'll send you the certificate in few minutes.</p>
+          <p id="pResult2">Check your email (including promotions/spam folder)</p>
+        </div>
+        <div class="incorrect" id="incorrect">
+          <h2 class="incorrect">Wrong</h2>
+          <h3 class="incorrect" id="incorrectPerc">percentuale</h3>
+          <p class="incorrect" id="incorrectNum">n/10</p>
+        </div>
+      </section>
+    </main>
+
+    <section class="button">
+      <button class="button"><a href="./review.html">RATE US</a></button>
+    </section>
+    <script src="./result.js"></script>
+  </body>
+</html>

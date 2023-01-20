@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./review.css" />
+    <link rel="stylesheet" href="./common.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/f795f2978c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/epicode_logo.png" alt="Logo" />
+    </header>
+
+     <section>
+
+       <h1>Tell us how it's going</h1>
+       <p id="p-testoUno">From 0 to 10, how likey are you to recommend EPICODE to a friend or a colleague?</p>
+       
+          
+       
+       
+        <div class="star_rating">
+          
+        <button class="star">&#9733;</button>
+        <button class="star">&#9733;</button>
+        <button class="star">&#9733;</button>
+        <button class="star">&#9733;</button>
+        <button class="star">&#9733;</button>
+        <button class="star">&#9733;</button>
+        <button class="star">&#9733;</button>
+        <button class="star">&#9733;</button>
+        <button class="star">&#9733;</button>
+        <button class="star">&#9733;</button>
+        <p class="current_rating">0 di 10</p>
+       </div>
+          
+
+    </section>
+
+      <main>
+        <p id="p-testoDue">Leave us an open feedback about your experience so far</p>
+        <input class="text-input" type="text" placeholder="Write your comment here">
+        <button type="submit" onclick="openPopUp()" id="button-review">MORE INFO</button>
+
+        <div class="popUp" id="popUp" >
+          <img class="imgPopUp" src="./assets/icone storia in evidenza (2).png" alt="">
+          <h2>Grazie!</h2>
+          <p class="valutazioneStars">La tua valutazione è stata inviata correttamente</p>
+          <button type="button" onclick="closePopUp()" class="buttonPopUp">FINE</button>
+
+        </div>
+      </main>
+
+     
+    <script src="./review.js"></script>
+     
+  </body>
+</html>

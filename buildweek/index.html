@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
+    <script>
+      function cambioStatus() {
+        const checkbox = document.getElementById("checkMe");
+        const button = document.getElementById("btn");
+        if (!checkbox.checked) {
+          button.disabled = true;
+        }
+
+        checkbox.addEventListener("change", (event) => {
+          if (event.target.checked) {
+            button.disabled = false;
+          } else {
+            alert("Mark the Checkbox");
+            button.disabled = true;
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/epicode_logo.png" alt="Logo" />
+    </header>
+    <h1>Welcome to <br /><span class="bold">your exam</span></h1>
+    <h5>Instructions</h5>
+    <p>
+      We don't expect most engineers to know the answers to all of these <br />
+      questions, so don't worry if you're unsure of a few of them.
+    </p>
+    <ul>
+      <li>Each question is <span class="bold">timed</span> and con only be <span class="bold">answered once.</span></li>
+      <li>Changing browser tab or opening other windows will <span class="bold">invalidate the question</span></li>
+      <li>This exam will take approx. <span class="bold">0-5 minutes.</span></li>
+    </ul>
+    <div class="checkandbutton">
+      <div>
+        <label class="container">
+          <input type="checkbox" id="checkMe" onclick="cambioStatus()" />
+          <span class="checkmark"></span>
+          <p>I promise to answer myself without help from anyone</p>
+        </label>
+      </div>
+
+      <div>
+        <form action="./test.html">
+          <button type="submit" class="button" id="btn" disabled>PROCEED</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
